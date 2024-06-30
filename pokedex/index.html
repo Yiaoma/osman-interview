@@ -8,17 +8,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    
+    <title>Pokedex</title>
 
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="search">
-      <form>
-        <input type="text" id="pokname" name="pokname" />
-      </form>
-      <button onlclick=""><i class="fa fa-search"></i></button>
+
+    <div id="container">
+      <div id="search" class="">
+        <form action="" id="pokeForm">
+          <input id="pokename" type="text" name="pokename" placeholder="Charizard"/>
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div id="buttons">
+        <button id="left"onclick="goToPrevious()" class="inactive"><</button>
+        <button id="right" onclick="goToNext()" class="inactive">></button>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
